@@ -14,7 +14,8 @@ pip install -r requirements.txt
 streamlit run app.py
 
 ## Live App
-https://your-app-url.streamlit.app
+[https://your-app-url.streamlit.app
+](https://customer-churn-predictor-hb8cyfbbf2yalv5jgkod7z.streamlit.app/)
 
 ## Author
 Zujaja
