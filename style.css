@@ -1,0 +1,231 @@
+/* =========================================================
+   Customer Churn Predictor — Professional Stylesheet
+   Author: Zujaja
+   Theme: Clean / Corporate / Light
+   ========================================================= */
+
+/* ---------- Global ---------- */
+.stApp {
+    background-color: #f7f9fc;
+    color: #1f2937;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.block-container {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    max-width: 1200px;
+}
+
+/* ---------- Header ---------- */
+.app-header {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-left: 5px solid #1e40af;
+    border-radius: 10px;
+    padding: 1.75rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.app-header h1 {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 0.35rem 0;
+    letter-spacing: -0.3px;
+}
+.app-header p {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ---------- Section headers ---------- */
+.section-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1e40af;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 2rem 0 0.85rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* ---------- Inputs ---------- */
+.stNumberInput input,
+.stTextInput input,
+div[data-baseweb="select"] > div {
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 8px !important;
+    font-size: 0.92rem !important;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.stNumberInput input:focus,
+.stTextInput input:focus,
+div[data-baseweb="select"] > div:focus-within {
+    border-color: #1e40af !important;
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.12) !important;
+    outline: none !important;
+}
+
+label {
+    color: #374151 !important;
+    font-weight: 500 !important;
+    font-size: 0.88rem !important;
+    margin-bottom: 0.25rem !important;
+}
+
+/* ---------- Slider ---------- */
+.stSlider [data-baseweb="slider"] div[role="slider"] {
+    background-color: #1e40af !important;
+    border-color: #1e40af !important;
+}
+.stSlider [data-baseweb="slider"] > div > div {
+    background: #1e40af !important;
+}
+
+/* ---------- Button ---------- */
+.stButton > button {
+    width: 100%;
+    background-color: #1e40af;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 8px;
+    letter-spacing: 0.2px;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    margin-top: 1.25rem;
+}
+.stButton > button:hover {
+    background-color: #1d4ed8;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(30, 64, 175, 0.25);
+}
+.stButton > button:active {
+    background-color: #1e3a8a;
+}
+.stButton > button:disabled {
+    background-color: #cbd5e1;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+/* ---------- Result cards ---------- */
+.result-card {
+    padding: 1.75rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    animation: fadeIn 0.35s ease;
+    border: 1px solid;
+}
+.result-churn {
+    background: #fef2f2;
+    border-color: #fecaca;
+    border-left: 5px solid #dc2626;
+}
+.result-stay {
+    background: #f0fdf4;
+    border-color: #bbf7d0;
+    border-left: 5px solid #16a34a;
+}
+.result-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+.result-text { flex: 1; }
+.result-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem 0;
+}
+.result-churn .result-title { color: #991b1b; }
+.result-stay  .result-title { color: #166534; }
+.result-sub {
+    font-size: 0.92rem;
+    color: #475569;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ---------- Probability bars ---------- */
+.prob-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1.5rem 1.75rem;
+    margin-top: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.prob-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 1rem;
+}
+.prob-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.85rem;
+    font-size: 0.9rem;
+}
+.prob-row:last-child { margin-bottom: 0; }
+.prob-label {
+    width: 80px;
+    color: #374151;
+    font-weight: 500;
+}
+.prob-bar-bg {
+    flex: 1;
+    height: 10px;
+    background: #f1f5f9;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 14px;
+}
+.prob-bar-fill {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+.prob-stay  { background: #16a34a; }
+.prob-churn { background: #dc2626; }
+.prob-val {
+    width: 55px;
+    text-align: right;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.82rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* ---------- Animation ---------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Hide Streamlit defaults ---------- */
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
+header { visibility: hidden; }

@@ -1,0 +1,63 @@
+{
+  "numeric_features": [
+    "age",
+    "tenure_months",
+    "monthly_charges",
+    "total_charges",
+    "num_support_calls",
+    "late_payments_last_year",
+    "avg_monthly_usage_gb"
+  ],
+  "categorical_features": [
+    "gender",
+    "region",
+    "contract_type",
+    "internet_service",
+    "tech_support",
+    "online_security",
+    "paperless_billing",
+    "payment_method"
+  ],
+  "categorical_options": {
+    "gender": [
+      "Female",
+      "Male"
+    ],
+    "region": [
+      "East",
+      "North",
+      "South",
+      "West"
+    ],
+    "contract_type": [
+      "Month-to-month",
+      "One year",
+      "Two year"
+    ],
+    "internet_service": [
+      "DSL",
+      "Fiber optic",
+      "No"
+    ],
+    "tech_support": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "online_security": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "paperless_billing": [
+      "No",
+      "Yes"
+    ],
+    "payment_method": [
+      "Bank transfer",
+      "Credit card",
+      "Electronic check",
+      "Mailed check"
+    ]
+  }
+}
